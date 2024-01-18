@@ -1,20 +1,42 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Exo:100,200,300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@300&family=Roboto+Slab:wght@200&display=swap');
 
 /*-------------------------------------------------------------Colors*/
 body {
-    background-color: #efefef;
+    background-color: #fffdfd;
 }
-
-header {
-    background-color: #b91919;
-}
-
 /*-------------------------------------------------------------Header*/
-/*-------------------------------------------------------------Footer*/
+header {
+    background-color: #fffdfd;
+}
+
+
+
 /*------------------------------------------------------------- Logo*/
 .logo {
-    height: 80px;
+    height: 100px;
     width: auto;
+    color: rgba(90, 172, 207, 0.05);
+    width: 294px;
+    height: 178px;
+    top: 18px;
+    left: 29px;
+    border-radius: 50px;
 }
 
-/*-------------------------------------------------------------*/
+/*------------------------------------------------------------- Testimonials*/
+.ourpatients {
+    width: 90px;
+    height: 90px;
+    object-fit: fill;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.patient-testimonial {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Roboto Slab', serif;
+    line-height: 15px;
+}
+
+/*-------------------------------------------------------------Footer*/
