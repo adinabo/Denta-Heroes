@@ -4,6 +4,7 @@
 body {
     background-color: #fffdfd;
 }
+
 /*-------------------------------------------------------------Header*/
 header {
     background-color: #fffdfd;
@@ -39,4 +40,15 @@ header {
     line-height: 15px;
 }
 
+/*-------------------------------------------------------------Hero*/
+.herotext {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    font-size: larger;
+}
+
 /*-------------------------------------------------------------Footer*/
+
+.contact {}
+
+.socialicons {}
