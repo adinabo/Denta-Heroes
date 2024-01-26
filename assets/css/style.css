@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Oswald:wght@300&family=Roboto+Slab:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Roboto+Serif:opsz@8..144&display=swap');
 
 /*-------------------------------------------------------------Colors*/
 body {
     background-color: #fffdfd;
+    font-family: 'Open Sans', 'Merriweather', sans-serif;
+    background: url('assets/images/hero.png') cover no-repeat fixed;
 }
 
 /*-------------------------------------------------------------Header*/
@@ -10,18 +12,76 @@ header {
     background-color: #fffdfd;
 }
 
+/*-------------------------------------------------------------Hero*/
 
+.jumbotron {
+    background-color: rgb(165, 165, 165);
+}
+
+.herotext {
+    font-weight: 800;
+    padding: 5px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-image {
+    max-width: 90%;
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
 
 /*------------------------------------------------------------- Logo*/
 .logo {
     height: 100px;
-    width: auto;
-    color: rgba(90, 172, 207, 0.05);
+    background-color: rgba(90, 172, 207, 0.05);
     width: 294px;
-    height: 178px;
+    height: 158px;
     top: 18px;
     left: 29px;
     border-radius: 50px;
+}
+
+.text-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-weight: 100;
+    line-height: 1.6;
+    font-size: 14px;
+    letter-spacing: 0.6px;
+    background: rgba(119, 115, 115, 0.338);
+    padding: 12px;
+}
+
+.text-image-header {
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*--------------------------------------------------------------Menu*/
+
+nav ul {
+    float: right;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+.menu-item a:hover {
+    background-color: rgba(152, 189, 201, 0.084);
+    transition: all .2s ease-in-out;
 }
 
 /*------------------------------------------------------------- Testimonials*/
@@ -31,23 +91,33 @@ header {
     object-fit: fill;
     border-radius: 50%;
     padding: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .patient-testimonial {
-    font-weight: 700;
+    font-weight: normal;
     font-size: 14px;
-    font-family: 'Roboto Slab', serif;
-    line-height: 15px;
-}
-
-/*-------------------------------------------------------------Hero*/
-.herotext {
-    font-family: 'Roboto Slab', serif;
-    font-weight: 800;
-    font-size: larger;
+    font-family: 'Lato';
+    line-height: 1.6;
 }
 
 /*-------------------------------------------------------------Footer*/
+.footer-info {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-header {
+    margin-bottom: 30px;
+}
+
+.divider {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
 
 .contact {}
 

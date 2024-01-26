@@ -25,35 +25,73 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
       type="text/css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Roboto+Serif:opsz@8..144&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Denta Heroes</title>
   </head>
   <body>
     <header>
-      <div class="row no-gutters">
-        <div class="col-md-3" class="logo">
-          <img src="assets/images/toothlogo.png" alt="logo" class="logo" />
-        </div>
-        <div class="col-md-3">Home</div>
-        <div class="col-md-3">Treatments</div>
-        <div class="col-md-3">Book online</div>
-      </div>
+      <nav class="navigationbar">
+        <a href="#">
+          <img src="assets/images/toothlogo.png" alt="tooth logo" class="logo"
+        /></a>
+        <ul class="menu-item">
+          <li>
+            <a href="#"
+              ><button type="button" class="btn btn-outline-info btn-lg">
+                Home
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><button type="button" class="btn btn-outline-info btn-lg">
+                Treatments
+              </button></a
+            >
+          </li>
+          <li>
+            <a href="#"
+              ><button type="button" class="btn btn-outline-info btn-lg">
+                Book appointment
+              </button></a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
     <section>
       <div class="hero-image">
         <img src="assets/images/hero.png" alt="Hero Image" class="hero" />
+
+        <div class="text-image">
+          <h2 class="text-image-header">DentaHeroes</h2>
+          <p>
+            Here, your unique dental journey is personalized with genuine care,
+            attention to detail, and a commitment to your overall well-being.
+            Your dream smile starts with us. Book your appointment today!
+          </p>
+          <button type="button" class="btn btn-info">Book now</button>
+        </div>
       </div>
-      <div>
-        <h3 class="herotext">It all starts with a smile</h3>
+      <div class="jumbotron">
+        <h1 class="herotext">Spreading Smiles, One Tooth at a Time!</h1>
       </div>
       <div class="container">
         <div class="row">
           <div class="col-sm-4">
-            <img
-              src="assets/images/Amy.jpg"
-              alt="old lady wearing glasses and a pink hoodie smiling"
-              class="ourpatients"
-            />
+            <div class="ourpatients-container">
+              <img
+                src="assets/images/Amy.jpg"
+                alt="old lady wearing glasses and a pink hoodie smiling"
+                class="ourpatients"
+              />
+            </div>
             <h5 class="patient-testimonial">
               “Dr Martin is a perfectionist and very skilled - I am extremely
               happy with my dentures. I would 100% recommend. The whole team are
@@ -61,11 +99,13 @@
             </h5>
           </div>
           <div class="col-sm-4">
-            <img
-              src="assets/images/Darren.jpg"
-              alt="young handsome dark skinned man smiling"
-              class="ourpatients"
-            />
+            <div class="ourpatients-container">
+              <img
+                src="assets/images/Darren.jpg"
+                alt="young handsome dark skinned man smiling"
+                class="ourpatients"
+              />
+            </div>
             <h5 class="patient-testimonial">
               "There are absolutely no words to describe how amazingly thankful
               I am to everyone at DentaHeroes. Thank you, Dr Laura and Dr Kim,
@@ -74,11 +114,13 @@
             </h5>
           </div>
           <div class="col-sm-4">
-            <img
-              src="assets/images/Sophie.jpg"
-              alt="young  pretty woman wearing glasses smiling"
-              class="ourpatients"
-            />
+            <div class="ourpatients-container">
+              <img
+                src="assets/images/Sophie.jpg"
+                alt="young  pretty woman wearing glasses smiling"
+                class="ourpatients"
+              />
+            </div>
             <h5 class="patient-testimonial">
               “I'm not a massive fan of the dentist (who is right?) but found
               the whole experience really positive and not stressful at all.
@@ -89,11 +131,12 @@
         </div>
       </div>
     </section>
-    <footer>
+    <hr class="divider" />
+    <footer class="footer">
       <div class="footer-container">
-        <div class="row no-gutters">
+        <div class="row no-gutters footer-info">
           <div class="col">
-            <h5>Contact</h5>
+            <h5 class="contact-header">Contact</h5>
             <ul class="contact">
               <li class="list-item">01005 210 000</li>
               <li class="list-item">contact@dentaheroes.com</li>
@@ -104,7 +147,7 @@
             </ul>
           </div>
           <div class="col">
-            <h5>Opening Hours</h5>
+            <h5 class="contact-header">Opening Hours</h5>
             <ul class="opening-hours">
               <li class="list-item">Monday - Friday 08.30 - 17.00</li>
               <li class="list-item">Saturday 08.30 - 16.00</li>
@@ -112,7 +155,7 @@
             </ul>
           </div>
           <div class="col">
-            <h5>Connect with us</h5>
+            <h5 class="contact-header">Connect with us</h5>
             <a href="http://www.facebook.com" alt="facebook icon"
               ><i class="fa fa-facebook socialicons" aria-hidden="true"></i
             ></a>
