@@ -36,10 +36,52 @@
   </head>
   <body>
     <header>
-      <nav class="navigationbar">
-        <a href="#">
-          <img src="assets/images/toothlogo.png" alt="tooth logo" class="logo"
-        /></a>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary topnav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="assets/images/toothlogo.png"
+              alt="tooth logo"
+              class="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Treatments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Book appointment</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-info search-button" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--
         <ul class="menu-item">
           <li>
             <a href="#"
@@ -63,12 +105,12 @@
             >
           </li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
     <section>
-      <div class="hero-image">
-        <img src="assets/images/hero.png" alt="Hero Image" class="hero" />
-
+      <!--
+      <div class="hero-image container">
+        <img src="assets/images/hero.png" alt="Hero Image" />
         <div class="text-image">
           <h2 class="text-image-header">DentaHeroes</h2>
           <p>
@@ -78,7 +120,31 @@
           </p>
           <button type="button" class="btn btn-info">Book now</button>
         </div>
+      </div> -->
+      <div class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 order-2 order-sm-1">
+              <h1 class="fw-bold display-4">Denta Heroes</h1>
+              <p>
+                Here, your unique dental journey is personalized with genuine
+                care, attention to detail, and a commitment to your overall
+                well-being. Your dream smile starts with us. Book your
+                appointment today!
+              </p>
+              <a href="#" class="btn btn-info"> Book appointment</a>
+            </div>
+            <div class="col-sm-6 order-1 order-sm-2">
+              <img
+                src="assets/images/dental.jpg"
+                class="object-fit-scale banner-img"
+                alt="patient smiling"
+              />
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="jumbotron">
         <h1 class="herotext">Spreading Smiles, One Tooth at a Time!</h1>
       </div>
@@ -132,40 +198,50 @@
       </div>
     </section>
     <hr class="divider" />
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="row no-gutters footer-info">
-          <div class="col">
-            <h5 class="contact-header">Contact</h5>
-            <ul class="contact">
-              <li class="list-item">01005 210 000</li>
-              <li class="list-item">contact@dentaheroes.com</li>
-              <li class="list-item">Denta Heroes Address:</li>
-              <li class="list-item">Wimbledon Road 1</li>
-              <li class="list-item">SE2 210</li>
-              <li class="list-item">London</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5 class="contact-header">Opening Hours</h5>
-            <ul class="opening-hours">
-              <li class="list-item">Monday - Friday 08.30 - 17.00</li>
-              <li class="list-item">Saturday 08.30 - 16.00</li>
-              <li class="list-item">Sunday - closed</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5 class="contact-header">Connect with us</h5>
-            <a href="http://www.facebook.com" alt="facebook icon"
-              ><i class="fa fa-facebook socialicons" aria-hidden="true"></i
-            ></a>
-            <a href="http://www.instagram.com" alt="instagram icon">
-              <i class="fa fa-instagram socialicons" aria-hidden="true"></i
-            ></a>
-            <a href="http://www.twitter.com" alt="twitter icon"
-              ><i class="fa fa-twitter socialicons" aria-hidden="true"></i
-            ></a>
-          </div>
+    <footer class="container-fluid">
+      <div class="row footer-info">
+        <div class="col-sm-4">
+          <h5 class="contact-header">Contact</h5>
+          <ul class="contact">
+            <li class="list-item">01005 210 000</li>
+            <li class="list-item">contact@dentaheroes.com</li>
+            <li class="list-item">Denta Heroes Address:</li>
+            <li class="list-item">Wimbledon Road 1</li>
+            <li class="list-item">SE2 210</li>
+            <li class="list-item">London</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="contact-header">Opening Hours</h5>
+          <ul class="opening-hours">
+            <li class="list-item">Monday - Friday 08.30 - 17.00</li>
+            <li class="list-item">Saturday 08.30 - 16.00</li>
+            <li class="list-item">Sunday - closed</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="contact-header">Connect with us</h5>
+          <a href="http://www.facebook.com" alt="facebook icon"
+            ><i
+              class="fa fa-facebook socialicons"
+              aria-hidden="true"
+              aria-label="Link to our facebook page"
+            ></i
+          ></a>
+          <a href="http://www.instagram.com" alt="instagram icon">
+            <i
+              class="fa fa-instagram socialicons"
+              aria-hidden="true"
+              aria-label="Link to our instagram page"
+            ></i
+          ></a>
+          <a href="http://www.twitter.com" alt="twitter icon"
+            ><i
+              class="fa fa-twitter socialicons"
+              aria-hidden="true"
+              aria-label="Link to our X page"
+            ></i
+          ></a>
         </div>
       </div>
     </footer>
