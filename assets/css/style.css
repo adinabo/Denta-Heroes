@@ -8,6 +8,11 @@ body {
     margin-right: 0;
 }
 
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
 /*-------------------------------------------------------------Header*/
 header {
     background-color: #fffdfd;
@@ -37,8 +42,8 @@ header {
 
 .row {
     align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    height: inherit;
+    overflow: auto;
 }
 
 .btn {
@@ -83,6 +88,10 @@ header {
 }
 
 /*--------------------------------------------------------------Navbar*/
+.navbar-expand-lg .navbar-collapse {
+    margin-left: 33%;
+}
+
 a {
     color: #17a2b8;
     font-family: 'Merriweather', serif;
@@ -105,9 +114,35 @@ a {
     }
 }
 
+.nav-link {
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+}
+
 /*------------------------------------------------------------- Testimonials*/
+.whatpatientssay {
+    margin-top: 48px;
+}
+
+.staff-pictures {
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
 .ourpatients-container {
-    width: 30%;
+    margin-top: 38px;
+}
+
+.jumbotron {
+    padding: 0;
 }
 
 .ourpatients {
@@ -130,18 +165,36 @@ a {
 }
 
 /*-------------------------------------------------------------Footer*/
-footer {
-    min-height: 120px;
-    margin: 0;
+#footer-info {
+    background-color: rgb(165, 165, 165);
+    color: #fafafa;
+    margin-top: 38px;
+    min-height: 50px;
 }
 
-.footer-info {
-    padding: 20px 0 20px;
+footer>.row {
+    align-items: flex-start;
 }
 
-.contact-header {
-    margin-bottom: 5px;
-    font-weight: 400;
+footer ul {
+    list-style-type: none;
+}
+
+footer h5 {
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.contact,
+.opening-hours {
+    margin: 0 0 8px;
+    padding: 0;
+}
+
+.socialicons {
+    font-size: 29px;
+    margin-right: 30px;
 }
 
 .divider {
@@ -149,6 +202,9 @@ footer {
     margin: 20px 0;
 }
 
-.contact {}
+/*-----------------------------------------------------------------Form*/
+.form-section {
+    background-image: url('../assets/images/smile-bg.jpg');
+    background-size: cover;
 
-.socialicons {}
+}
