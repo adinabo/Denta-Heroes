@@ -46,6 +46,14 @@ header {
     overflow: auto;
 }
 
+<<<<<<< HEAD
+=======
+.btn {
+    padding: 0.5em 1.5em;
+    border-radius: 2em;
+}
+
+>>>>>>> ee32c92c5ef3e69bea6b20c7fbfab7be46f6bc71
 @media screen and (min-width: 769px) {
     p {
         font-size: 1.2em;
@@ -197,6 +205,7 @@ footer h5 {
     margin: 20px 0;
 }
 
+<<<<<<< HEAD
 
 /*---------------------------------------------------------------Booking Form*/
 .form-section {
@@ -261,3 +270,11 @@ input[type="submit"] {
   
   
   
+=======
+/*-----------------------------------------------------------------Form*/
+.form-section {
+    background-image: url('../assets/images/smile-bg.jpg');
+    background-size: cover;
+
+}
+>>>>>>> ee32c92c5ef3e69bea6b20c7fbfab7be46f6bc71
