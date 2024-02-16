@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&family=Roboto+Serif:opsz@8..144&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Denta Heroes</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary topnav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="assets/images/toothlogo.png"
+              alt="tooth logo"
+              class="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="treatments.html">Treatments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bookappointment.html"
+                  >Book appointment</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <div
+        class="form-section align-items-center"
+        style="
+          background-image: url(assets/images/smile-bg.jpg);
+        " alt="patient smiling background" no repeat cover
+      >
+        <h1 class="form-header">Booking Enquiry</h1>
+        <div class="form-container">
+        <form
+          class="align-items-center"
+          method="post"
+          action="https://form.codeinstitute.net/"
+        >
+          <fieldset class="align-items-center">
+            <div class="row mb-1">
+              <label for="first-name"
+                >Enter Your First Name:
+                <input id="first-name" name="first-name" type="text" required
+              /></label>
+            </div>
+            <div class="row mb-1">
+              <label for="last-name"
+                >Enter Your Last Name:
+                <input id="last-name" name="last-name" type="text" required
+              /></label>
+            </div>
+            <div class="row mb-1">
+              <label for="phone"
+                >Enter Your Phone Number:
+                <input id="phone" name="phone" type="phone" required />
+              </label>
+            </div>
+            <div class="row mb-1">
+              <label for="email"
+                >Enter Your Email:
+                <input id="email" name="email" type="email" required
+              /></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <div class="row mb-1">
+              <label for="referrer"
+                >Reason For Appointment
+                <select id="referrer" name="referrer">
+                  <option value="">(select one)</option>
+                  <option value="1">Examination</option>
+                  <option value="2">Hygiene Appointment</option>
+                  <option value="3">Emergency appointment</option>
+                  <option value="4">Teeth straightening</option>
+                  <option value="4">Teeth whitening</option>
+                  <option value="4">Implants</option>
+                  <option value="4">Other</option>
+                </select>
+              </label>
+            </div>
+            <div class="row mb-1">
+              <label for="contact"
+                >How should we contact you?
+                <select id="contact" name="contact">
+                  <option value="">(select one)</option>
+                  <option value="1">Phone</option>
+                  <option value="2">Email</option>
+                  <option value="4">Text message</option>
+                </select>
+              </label>
+            </div>
+            <div class="row mb-1">
+              <label for="message"
+                >Enter your message
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="7"
+                  cols="50"
+                  placeholder="Please enter your message here..."
+                ></textarea>
+              </label>
+            </div>
+          </fieldset>
+          <input class="btn btn-info" type="submit" value="Submit" />
+        </form>
+      </div>
+      </div>
+    </section>
+    <footer class="container-fluid">
+      <div id="footer-info" class="row">
+        <div class="col-sm-4">
+          <h5 class="contact-header">Contact</h5>
+          <ul class="contact">
+            <li class="list-item">01005 210 000</li>
+            <li class="list-item">contact@dentaheroes.com</li>
+            <li class="list-item">Denta Heroes Address:</li>
+            <li class="list-item">Wimbledon Road 1</li>
+            <li class="list-item">SE2 210</li>
+            <li class="list-item">London</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="contact-header">Opening Hours</h5>
+          <ul class="opening-hours">
+            <li class="list-item">Monday - Friday 08.30 - 17.00</li>
+            <li class="list-item">Saturday 08.30 - 16.00</li>
+            <li class="list-item">Sunday - closed</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="contact-header">Connect with us</h5>
+          <a href="http://www.facebook.com">
+            <i
+              class="fa fa-facebook socialicons"
+              aria-hidden="true"
+              aria-label="Link to our facebook page"
+            ></i
+          ></a>
+          <a href="http://www.instagram.com">
+            <i
+              class="fa fa-instagram socialicons"
+              aria-hidden="true"
+              aria-label="Link to our instagram page"
+            ></i
+          ></a>
+          <a href="http://www.twitter.com"
+            ><i
+              class="fa fa-twitter socialicons"
+              aria-hidden="true"
+              aria-label="Link to our X page"
+            ></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

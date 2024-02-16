@@ -4,7 +4,13 @@
 body {
     background-color: #fffdfd;
     font-family: 'Open Sans', 'Merriweather', sans-serif;
-    background: url('assets/images/hero.png') cover no-repeat fixed;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+hr {
+    border: 1px solid #ccc;
+    margin: 20px 0;
 }
 
 /*-------------------------------------------------------------Header*/
@@ -12,13 +18,55 @@ header {
     background-color: #fffdfd;
 }
 
-/*-------------------------------------------------------------Hero*/
-
 .jumbotron {
     background-color: rgb(165, 165, 165);
+    width: auto;
+}
+
+/*-------------------------------------------------------------Hero*/
+.banner-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.banner {
+    background-color: rgb(113, 113, 113);
+    color: #f1f1f1;
+    height: 100vh;
+}
+
+.container {
+    height: 100vh;
+}
+
+.row {
+    align-items: center;
+    height: inherit;
+    overflow: auto;
+}
+
+@media screen and (min-width: 769px) {
+    p {
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        padding: 2em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    img {
+        width: 70%;
+    }
 }
 
 .herotext {
+    /* text inside jumbotron*/
     font-weight: 800;
     padding: 5px;
     font-size: 25px;
@@ -27,64 +75,71 @@ header {
     color: #fff;
 }
 
-.hero-image {
-    max-width: 90%;
-    height: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-/*------------------------------------------------------------- Logo*/
+/*---------------------------------------------------------------- Tooth logo */
 .logo {
-    height: 100px;
-    background-color: rgba(90, 172, 207, 0.05);
-    width: 294px;
-    height: 158px;
-    top: 18px;
-    left: 29px;
+    height: 125px;
+    width: auto;
     border-radius: 50px;
 }
 
-.text-image {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
+/*--------------------------------------------------------------Navbar*/
+.navbar-expand-lg .navbar-collapse {
+    margin-left: 33%;
+}
+
+a {
+    color: #17a2b8;
     font-family: 'Merriweather', serif;
-    font-weight: 100;
-    line-height: 1.6;
-    font-size: 14px;
+    font-size: 19px;
+    font-weight: 600;
     letter-spacing: 0.6px;
-    background: rgba(119, 115, 115, 0.338);
-    padding: 12px;
+    line-height: 1.6;
+    justify-content: flex-end;
 }
 
-.text-image-header {
-    font-size: 20px;
-    font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 10px;
+.btn-outline-primary {
+    color: #17a2b8;
+    border-color: #17a2b8;
 }
 
-/*--------------------------------------------------------------Menu*/
-
-nav ul {
-    float: right;
-    margin-right: 10px;
-    display: inline-block;
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
 }
 
-
-.menu-item a:hover {
-    background-color: rgba(152, 189, 201, 0.084);
-    transition: all .2s ease-in-out;
+.nav-link {
+    margin-top: 1.5rem;
+    margin-left: 3rem;
 }
 
 /*------------------------------------------------------------- Testimonials*/
+.whatpatientssay {
+    margin-top: 48px;
+}
+
+.staff-pictures {
+    width: 380px;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+
+}
+
+.ourpatients-container {
+    margin-top: 38px;
+}
+
+.jumbotron {
+    padding: 0;
+}
+
 .ourpatients {
     width: 90px;
     height: 90px;
@@ -105,13 +160,36 @@ nav ul {
 }
 
 /*-------------------------------------------------------------Footer*/
-.footer-info {
-    margin-top: 30px;
-    margin-bottom: 30px;
+#footer-info {
+    background-color: rgb(165, 165, 165);
+    color: #fafafa;
+    margin-top: 38px;
+    min-height: 50px;
 }
 
-.contact-header {
-    margin-bottom: 30px;
+footer>.row {
+    align-items: flex-start;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer h5 {
+    margin-bottom: 12px;
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.contact,
+.opening-hours {
+    margin: 0 0 8px;
+    padding: 0;
+}
+
+.socialicons {
+    font-size: 29px;
+    margin-right: 30px;
 }
 
 .divider {
@@ -119,6 +197,67 @@ nav ul {
     margin: 20px 0;
 }
 
-.contact {}
 
-.socialicons {}
+/*---------------------------------------------------------------Booking Form*/
+.form-section {
+    background-image: url(assets/images/smile-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .form-container
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  form{
+    color:#fff;
+    max-width:80%;
+    background-color: rgba(25, 24, 24, 0.416);
+    border-radius: 2%;
+  }
+  .form-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; 
+    color:#fff;
+}
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+ input, textarea, label {
+  width: 80%; 
+  padding: 8px;
+  border-radius: 2%;
+}
+input, textarea, select {
+    background-color: #0b0b0b77;
+    border: 1px solid #0b0b0b77;
+    color: #ffffff;
+    border-radius: 2%;
+  }
+label {
+    display: block;
+    margin: 0.5rem 0;
+    margin-left: 18%;
+}
+textarea{
+    margin-top:10px;
+}
+input[type="submit"] {
+    display: block;
+    width: 50%;
+    margin-bottom: 40px;
+    margin-left: 22%;
+    height: 2em;
+    font-size: 1.1rem;
+  } 
+
+  
+  
+  
+  

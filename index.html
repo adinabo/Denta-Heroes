@@ -2,17 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      type="text/css"
-    />
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link
@@ -36,54 +25,105 @@
   </head>
   <body>
     <header>
-      <nav class="navigationbar">
-        <a href="#">
-          <img src="assets/images/toothlogo.png" alt="tooth logo" class="logo"
-        /></a>
-        <ul class="menu-item">
-          <li>
-            <a href="#"
-              ><button type="button" class="btn btn-outline-info btn-lg">
-                Home
-              </button></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><button type="button" class="btn btn-outline-info btn-lg">
-                Treatments
-              </button></a
-            >
-          </li>
-          <li>
-            <a href="#"
-              ><button type="button" class="btn btn-outline-info btn-lg">
-                Book appointment
-              </button></a
-            >
-          </li>
-        </ul>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary topnav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="assets/images/toothlogo.png"
+              alt="tooth logo"
+              class="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="treatments.html">Treatments</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bookappointment.html">Book appointment</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <section>
-      <div class="hero-image">
-        <img src="assets/images/hero.png" alt="Hero Image" class="hero" />
-
-        <div class="text-image">
-          <h2 class="text-image-header">DentaHeroes</h2>
-          <p>
-            Here, your unique dental journey is personalized with genuine care,
-            attention to detail, and a commitment to your overall well-being.
-            Your dream smile starts with us. Book your appointment today!
-          </p>
-          <button type="button" class="btn btn-info">Book now</button>
+      <div class="banner">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 order-2 order-sm-1">
+              <h1 class="fw-bold display-4">Denta Heroes</h1>
+              <p>
+                Here, your unique dental journey is personalized with genuine
+                care, attention to detail, and a commitment to your overall
+                well-being. Your dream smile starts with us. Book your
+                appointment today!
+              </p>
+              <a href="#" class="btn btn-info"> Book appointment</a>
+            </div>
+            <div class="col-sm-6 order-1 order-sm-2">
+              <img
+                src="assets/images/dental.jpg"
+                class="object-fit-scale banner-img"
+                alt="patient smiling"
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div class="jumbotron">
         <h1 class="herotext">Spreading Smiles, One Tooth at a Time!</h1>
       </div>
-      <div class="container">
+    </section>
+    <section>
+       <div class="about-us">
+            <h3 class="text-center font-weight-bold">Who are we?</h3>
+            <p class="text-center lh-sm">
+            Welcome to our dental practice in South London, where we've been serving our community since 1972 with a
+            commitment to excellence in dental care. Specializing in root canal treatments, we pride ourselves on offering
+            compassionate and effective solutions to our patients' dental needs.</p>
+            <p class="text-center lh-sm">Founded by Dr. Emily Smith, the practice has been a cornerstone of dental care in London since she took over from
+            her father, Dr. James Smith, more than 20 years ago. </p>
+            <p class="text-center lh-sm">Dr. Emily Smith grew up watching her father transform smiles and lives through dentistry, instilling in her a
+            passion
+            for the profession from a young age. After completing her education and training, she eagerly stepped into her
+            father's
+            footsteps, continuing the legacy of compassionate care and clinical excellence.</p>
+       </div>
+      <div class="container-fluid">
         <div class="row">
+            <div class="col-lg-6 col-sm-6">
+                    <img src="assets/images/staff1.jpg" class="staff-pictures" alt="member of staff smiling">
+                        <p>Our dental team is committed to providing you with the very best in dental healthcare. We are all passionate
+                    about
+                    dentistry and share a single aim: to maintain your teeth healthy and keep you smiling. Our team consists of
+                    dedicated
+                    individuals who are kind, friendly and caring.</p>
+                </div>
+            <div class="col-lg-6 col-sm-6">
+                <img src="assets/images/staff2.jpg" class="staff-pictures" alt="member of staff and patient smiling">
+                <p>We're dedicated to making your clinic visit enjoyable. Our dental team comprises experienced and
+                    enthusiastic
+                    individuals committed to effective communication with patients and delivering exceptional care.</p>
+            </div>
+            </div>
+            <div class="jumbotron">
+                <h3 class="whatpatientssay">What our patients say</h3>
+            </div>
+            <div class="row">
           <div class="col-sm-4">
             <div class="ourpatients-container">
               <img
@@ -91,12 +131,12 @@
                 alt="old lady wearing glasses and a pink hoodie smiling"
                 class="ourpatients"
               />
-            </div>
             <h5 class="patient-testimonial">
               “Dr Martin is a perfectionist and very skilled - I am extremely
-              happy with my dentures. I would 100% recommend. The whole team are
+              happy with my new dentures. My old ones were so uncomfortable. I would 100% recommend. The whole team are
               wonderful.” <em>Amy</em>
             </h5>
+          </div>
           </div>
           <div class="col-sm-4">
             <div class="ourpatients-container">
@@ -105,13 +145,13 @@
                 alt="young handsome dark skinned man smiling"
                 class="ourpatients"
               />
-            </div>
             <h5 class="patient-testimonial">
               "There are absolutely no words to describe how amazingly thankful
               I am to everyone at DentaHeroes. Thank you, Dr Laura and Dr Kim,
               for all the support and help I have received over the last few
               weeks. I definitely recommend the clinic.” <em>Darren</em>
             </h5>
+            </div>
           </div>
           <div class="col-sm-4">
             <div class="ourpatients-container">
@@ -120,52 +160,62 @@
                 alt="young  pretty woman wearing glasses smiling"
                 class="ourpatients"
               />
-            </div>
             <h5 class="patient-testimonial">
               “I'm not a massive fan of the dentist (who is right?) but found
               the whole experience really positive and not stressful at all.
               Plus they were very accommodating and fitted me in at short notice
               for an emergency root canal treatment.” <em>Sophie</em>
             </h5>
+            </div>
           </div>
         </div>
-      </div>
+        </div>
+        </div>
     </section>
-    <hr class="divider" />
-    <footer class="footer">
-      <div class="footer-container">
-        <div class="row no-gutters footer-info">
-          <div class="col">
-            <h5 class="contact-header">Contact</h5>
-            <ul class="contact">
-              <li class="list-item">01005 210 000</li>
-              <li class="list-item">contact@dentaheroes.com</li>
-              <li class="list-item">Denta Heroes Address:</li>
-              <li class="list-item">Wimbledon Road 1</li>
-              <li class="list-item">SE2 210</li>
-              <li class="list-item">London</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5 class="contact-header">Opening Hours</h5>
-            <ul class="opening-hours">
-              <li class="list-item">Monday - Friday 08.30 - 17.00</li>
-              <li class="list-item">Saturday 08.30 - 16.00</li>
-              <li class="list-item">Sunday - closed</li>
-            </ul>
-          </div>
-          <div class="col">
-            <h5 class="contact-header">Connect with us</h5>
-            <a href="http://www.facebook.com" alt="facebook icon"
-              ><i class="fa fa-facebook socialicons" aria-hidden="true"></i
-            ></a>
-            <a href="http://www.instagram.com" alt="instagram icon">
-              <i class="fa fa-instagram socialicons" aria-hidden="true"></i
-            ></a>
-            <a href="http://www.twitter.com" alt="twitter icon"
-              ><i class="fa fa-twitter socialicons" aria-hidden="true"></i
-            ></a>
-          </div>
+    <footer class="container-fluid">
+      <div id ="footer-info" class="row">
+        <div class="col-sm-4">
+          <h5 class="contact-header">Contact</h5>
+          <ul class="contact">
+            <li class="list-item">01005 210 000</li>
+            <li class="list-item">contact@dentaheroes.com</li>
+            <li class="list-item">Denta Heroes Address:</li>
+            <li class="list-item">Wimbledon Road 1</li>
+            <li class="list-item">SE2 210</li>
+            <li class="list-item">London</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="contact-header">Opening Hours</h5>
+          <ul class="opening-hours">
+            <li class="list-item">Monday - Friday 08.30 - 17.00</li>
+            <li class="list-item">Saturday 08.30 - 16.00</li>
+            <li class="list-item">Sunday - closed</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h5 class="contact-header">Connect with us</h5>
+          <a href="http://www.facebook.com">
+            <i
+              class="fa fa-facebook socialicons"
+              aria-hidden="true"
+              aria-label="Link to our facebook page"
+            ></i
+          ></a>
+          <a href="http://www.instagram.com">
+            <i
+              class="fa fa-instagram socialicons"
+              aria-hidden="true"
+              aria-label="Link to our instagram page"
+            ></i
+          ></a>
+          <a href="http://www.twitter.com"
+            ><i
+              class="fa fa-twitter socialicons"
+              aria-hidden="true"
+              aria-label="Link to our X page"
+            ></i
+          ></a>
         </div>
       </div>
     </footer>
