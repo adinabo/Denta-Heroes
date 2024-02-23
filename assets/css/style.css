@@ -26,16 +26,19 @@ header {
 /*-------------------------------------------------------------Banner*/
 .banner {
     background: url(../images/smile-bg.jpg);
+    color: #f1f1f1;
     background-repeat: no-repeat;
     background-size: cover;
     background-position:  0 -300px ;
     background-color: rgb(113, 113, 113); 
-    color: #f1f1f1;
-    height: 80vh;
+    height: 80vh; 
 }
 
 .container {
     height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .row {
@@ -43,13 +46,6 @@ header {
     height: inherit;
     overflow: auto;
 }
-
-@media screen and (min-width: 769px) {
-    p {
-        font-size: 1.2em;
-    }
-}
-
 @media screen and (max-width: 768px) {
     .banner {
         padding: 2em;
@@ -57,18 +53,28 @@ header {
         max-width: 100%; 
         height: auto; 
     }
+    p {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 567px) {
-    img {
-         max-width: 100%; 
-        height: auto; /
-              
+    .banner {
+        max-width: 100%; 
+        height: auto; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .container {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
     }
 }
 
 .herotext {
-    /* text inside jumbotron*/
     font-weight: 800;
     padding: 5px;
     font-size: 25px;
