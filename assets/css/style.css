@@ -306,4 +306,23 @@ input[type="submit"] {
     font-family: 'Roboto', sans-serif;
     font-size: 2.5rem;
 }
+@media screen and (max-width: 768px) {
+    .row > .treatments-header {
+        max-width: 100%; 
+        height: 20vh; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .row > .treatments-header {
+        max-width: 100%; 
+        height: 20vh; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
       
