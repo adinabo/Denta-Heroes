@@ -8,7 +8,7 @@
  options. Whether you\'re a new patient seeking information about our
  services or a returning patient looking to book your next appointment,
  our user-friendly platform makes it easy to access the information you
- need. View the live website here https://adinabo.github.io/Denta-Heroes/index.html*
+ need. View the live website here https://adinabo.github.io/Denta-Heroes/index.html
 
  ### FEATURES
 
@@ -25,6 +25,15 @@
  all pages of the website, ensuring a seamless browsing experience for
  visitors.This section includes the name and the logo which I designed
  myself using Paint, Photoshop, a picture and text merged together.
+
+
+   **User stories**
+
+User 1 : As a new patient, I want to easily navigate the website to find information about the services offered, and patient testimonials, so I can make an informed decision about scheduling an appointment.
+
+User 2: As an existing patient, I want to easily schedule or reschedule appointments online, and securely communicate with my dentist or the office staff, saving time and effort.
+
+User 3: As a visitor interested in dental health tips and information, I want access to a blog or resources section where I can watch videos on topics such as oral hygiene, common dental procedures, so I can improve my dental knowledge and habits.
 
    **The hero image on the first page**
 
@@ -190,6 +199,8 @@ The website was successfully deployed to GitHub. Steps to deploy it:
  * Bootstrap
  * Figma (for Wireframes)
  * Adobe hotoshop (for editing photos) 
+ * Git for version control
+ * Visual Studio
 
 ## Credits
 
