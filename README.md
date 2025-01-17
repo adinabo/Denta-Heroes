@@ -157,6 +157,35 @@ Firefox, Safari, and Microsoft Edge.
 Feedback was collected from friends and family who were asked to navigated through the website,
 and identify any possible bugs or simply express their honest opinion.
 
+### Manual Testing
+- Navigation Bar
+
+Verified that all navigation links redirect to the correct sections of the website.
+
+Ensured the navigation bar remains responsive and functional on all screen sizes.
+
+- Interactive Features
+
+Confirmed that all buttons, forms, and clickable elements perform their intended actions.
+
+Validated correct error messages for invalid form submissions (e.g., empty required fields).
+
+- Content Display
+
+Ensured that all text, images, and icons render correctly across devices and browsers.
+
+- Tested the application on the following browsers:
+
+Google Chrome, Mozilla Firefox, Microsoft Edge, Safari, Opera
+
+- Tested the website on multiple screen sizes, including:
+
+Mobile (iPhone, Android phones, etc.), Tablet (iPad, Android tablets, etc.), Desktop (various resolutions).
+
+Verified that the layout adjusts seamlessly across all screen sizes, with no overlapping or misaligned elements.
+
+Confirmed consistent performance and appearance across all browsers.
+
   * WS3 CSS Testing Validator Results 
 
 
